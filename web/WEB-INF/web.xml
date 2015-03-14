@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ 
+<servlet>
+   <servlet-name>loginServlet</servlet-name>
+   <servlet-class>login.OnServletLogin</servlet-class>
+</servlet>
+
+<servlet>
+   <servlet-name>logoutServlet</servlet-name>
+   <servlet-class>login.OnLogoutServlet</servlet-class>
+</servlet>
+
+<servlet>
+   <servlet-name>listServlet</servlet-name>
+   <servlet-class>cars.OnListServlet</servlet-class>
+</servlet>
+
+<servlet>
+   <servlet-name>leiheServlet</servlet-name>
+   <servlet-class>cars.OnLeiheServlet</servlet-class>
+</servlet>
+
+<servlet>
+   <servlet-name>createOrDeleteServlet</servlet-name>
+   <servlet-class>cars.OnCreateOrDeleteServlet</servlet-class>
+</servlet>
+
+<servlet>
+   <servlet-name>saveCarServlet</servlet-name>
+   <servlet-class>cars.OnSaveCarServlet</servlet-class>
+</servlet>
+
+<servlet>
+   <servlet-name>deleteCarServlet</servlet-name>
+   <servlet-class>cars.OnDeleteServlet</servlet-class>
+</servlet>
+ 
+<servlet-mapping>
+   <servlet-name>loginServlet</servlet-name>
+   <url-pattern>/login</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+   <servlet-name>logoutServlet</servlet-name>
+   <url-pattern>/logout</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+   <servlet-name>listServlet</servlet-name>
+   <url-pattern>/list</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+   <servlet-name>leiheServlet</servlet-name>
+   <url-pattern>/leihe</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+   <servlet-name>createOrDeleteServlet</servlet-name>
+   <url-pattern>/createOrDelete</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+   <servlet-name>saveCarServlet</servlet-name>
+   <url-pattern>/saveCar</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+   <servlet-name>deleteCarServlet</servlet-name>
+   <url-pattern>/delete</url-pattern>
+</servlet-mapping>
+ 
+<welcome-file-list>
+   <welcome-file>index.html</welcome-file>
+</welcome-file-list>
+ 
+</web-app>
